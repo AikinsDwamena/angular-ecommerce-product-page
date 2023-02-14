@@ -1,0 +1,44 @@
+<header>
+  <nav>
+    <div class="left-side">
+      <span class="mobile-only"
+        ><img
+          class="menu-button mobile-only"
+          src="../../../assets/images/icon-menu.svg"
+          alt="menu-button"
+          (click)="changeMenuVisibility()"
+      /></span>
+      <h1>sneakers</h1>
+
+      <ul
+        role="list"
+        class="menu-items"
+        [ngClass]="{ active: closeIconVisible }"
+      >
+        <li class="mobile-only icon-close" (click)="changeMenuVisibility()">
+          <img src="../../../assets/images/icon-close.svg" alt="" />
+        </li>
+        <li>Collections</li>
+        <li>Men</li>
+        <li>Women</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <div class="right-side">
+      <span>
+        <img
+          class="cart-icon"
+          src="../../../assets/images/icon-cart.svg"
+          alt="icon-cart"
+        />
+      </span>
+      <span
+        ><img
+          class="avatar"
+          src="../../../assets/images/image-avatar.png"
+          alt="image-avatar"
+      /></span>
+    </div>
+  </nav>
+</header>
